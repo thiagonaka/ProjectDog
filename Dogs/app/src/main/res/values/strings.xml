@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Dogs</string>
+
+    <!-- ACTIVITY LOGIN -->
+
+    <string name="activity_login_str_txt_the">THE</string>
+    <string name="activity_login_str_txt_iddog">IDDOG</string>
+    <string name="activity_login_str_txt_your_login">Your e-mail</string>
+    <string name="activity_login_str_txt_email">your@email.com</string>
+
+    <!-- TABSADAPTER -->
+
+    <string name="tabs_adapter_str_txt_husky">Husky</string>
+    <string name="tabs_adapter_str_txt_hound">Hound</string>
+    <string name="tabs_adapter_str_txt_pug">Pug</string>
+    <string name="tabs_adapter_str_txt_labrador">Labrador</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
