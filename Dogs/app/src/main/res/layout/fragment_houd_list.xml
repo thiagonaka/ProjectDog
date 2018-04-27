@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/green"
     tools:context=".fragment.HoudListFragment">
 
     <GridView
@@ -13,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
         android:layout_marginTop="20dp"
         android:numColumns="3"
         android:scrollbarStyle="outsideOverlay"

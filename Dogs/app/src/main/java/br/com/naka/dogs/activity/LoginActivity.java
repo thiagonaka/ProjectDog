@@ -76,7 +76,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             startActivity(intent);
 
                         }else if (statusCode == 400){
-
                             alert("Email is not valid");
                         }else {
                             alert("Error validating email");
