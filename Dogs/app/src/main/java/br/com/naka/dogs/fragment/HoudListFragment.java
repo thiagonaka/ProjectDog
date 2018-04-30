@@ -1,6 +1,7 @@
 package br.com.naka.dogs.fragment;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,7 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -40,6 +44,7 @@ public class HoudListFragment extends Fragment implements AdapterView.OnItemClic
     private GridView gridHound;
     private String token;
     private ServicoParametro service;
+    private ImageView imgDog;
 
     public static HoudListFragment newInstance(int tipo) {
         Bundle args = new Bundle();
@@ -120,8 +125,24 @@ public class HoudListFragment extends Fragment implements AdapterView.OnItemClic
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         String url = listHound.get((int) id);
-        int posicao = position;
+        detalheDialog(url);
 
+    }
+
+    private void detalheDialog(String urlImage) {
+        //Declarando o Dialog
+        final AlertDialog.Builder mBuilder = new AlertDialog.Builder(getActivity());
+        View mView = getLayoutInflater().inflate(R.layout.dialog_detail_img_dog, null);
+
+        imgDog = (ImageView) mView.findViewById(R.id.dialog_img_dog);
+
+        //Criando o Dialog de fato
+        mBuilder.setView(mView);
+        final AlertDialog dialog = mBuilder.create();
+        dialog.show();
+
+        String url = urlImage;
+        Picasso.with(getActivity()).load(url).into(imgDog);
 
     }
 

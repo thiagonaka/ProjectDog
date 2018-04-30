@@ -2,6 +2,8 @@ package br.com.naka.dogs.util;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.widget.Toast;
 
 public class Singleton {
@@ -40,6 +42,19 @@ public class Singleton {
             mDialog.dismiss( );
         }
         mDialog = null;
+    }
+
+    public static boolean isDeviceOnline(Context context) {
+        boolean isConnectionAvail = false;
+        try {
+            ConnectivityManager cm = (ConnectivityManager) context
+                    .getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo netInfo = cm.getActiveNetworkInfo();
+            return netInfo.isConnected();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return isConnectionAvail;
     }
 
 

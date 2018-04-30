@@ -46,7 +46,7 @@ public class DogsAdapter extends ArrayAdapter<String>{
         }
 
         String url = db;
-        Picasso.with(context).load(url).fit().into(viewHolder.imgDogs);
+        Picasso.with(context).load(url).into(viewHolder.imgDogs);
 
         return convertView;
     }

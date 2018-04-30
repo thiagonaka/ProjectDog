@@ -39,5 +39,9 @@
         <item name="android:windowFrame">@null</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
+    
+    <style name="Theme_ProgressDialog" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
 
 </resources>

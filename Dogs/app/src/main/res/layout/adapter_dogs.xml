@@ -5,6 +5,7 @@
     android:orientation="vertical">
 
     <ImageView
+        android:adjustViewBounds="true"
         android:id="@+id/adapter_dogs_img"
         android:layout_width="100dp"
         android:layout_height="100dp" />

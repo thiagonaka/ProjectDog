@@ -5,8 +5,10 @@
 
     <string name="activity_login_str_txt_the">THE</string>
     <string name="activity_login_str_txt_iddog">IDDOG</string>
-    <string name="activity_login_str_txt_your_login">Your e-mail</string>
+    <string name="activity_login_str_txt_your_login">Click in your e-mail</string>
     <string name="activity_login_str_txt_email">your@email.com</string>
+    <string name="activity_login_str_txt_progress">Loading...</string>
+    <string name="activity_login_str_txt_msg_progress">Please wait...</string>
 
     <!-- TABSADAPTER -->
 
